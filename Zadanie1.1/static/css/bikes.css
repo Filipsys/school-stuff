@@ -1,0 +1,9 @@
+table, tr, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.section1, .section2, .section3, .section4 {
+	margin-left: 30px;
+}
