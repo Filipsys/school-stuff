@@ -1,0 +1,39 @@
+1. If (age > 18) {
+    alert('You are old enough to vote!');
+}
+
+2. If (weather === "sunny") {
+    alert('Put on your sunscreen!');
+}
+
+3. If (day === "weekend") {
+    alert('Time to relax!');
+}
+
+4. If (miles > 0) {
+    alert('You have gone somewhere today!');
+}
+
+5. If (grade > 90) {
+    alert('You got an A!');
+}
+
+6. If (hours > 40) {
+    alert('Overtime!');
+}
+
+7. If (money > 100) {
+    alert('Time to go shopping!');
+}
+
+8. If (temperature > 80) {
+    alert('It's hot outside!');
+}
+
+9. If (month === "December") {
+    alert('Merry Christmas!');
+}
+
+10. If (time < 12) {
+    alert('Good morning!');
+}
