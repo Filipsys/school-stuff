@@ -1,6 +1,4 @@
-# school-stuff
-
----
+# School stuff
 
 ### Loop ideas (practice) 
 
