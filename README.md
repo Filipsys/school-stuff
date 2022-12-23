@@ -1,6 +1,8 @@
 # School stuff
 
-### :newspaper: Loop ideas (practice) 
+### :newspaper: Loop ideas (practice)
+:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/PETLE/petle.js"><b>Click here</a>
+to jump to the file <i>(spoilers!)</i></b>
 
 1. Print the numbers 1 to 10 using a for loop
 2. Create an array and iterate through it with a for loop
@@ -14,6 +16,8 @@
 10. Create a loop to print the powers of 2 from 1 to 10
 
 ### :newspaper: Function ideas (practice)
+:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/functions.js"><b>Click here</a>
+to jump to the file <i>(spoilers!)</i></b>
 
 1. createRandomNumber - Generates a random number between 0 and 1000
 2. reverseString - Reverses a given string
@@ -25,6 +29,7 @@
 8. createEmailAddress - Generates a unique email address
 9. checkPalindrome - Checks if a given string is a palindrome
 10. getRandomColor - Generates a random color in hex code
+
 
 ### :newspaper: Object ideas (practice)
 
