@@ -1,3 +1,19 @@
+//* FUNCTIONS (for multiple use)
+
+function createDiv(name, bg_color, width, height) {
+  const div = document.createElement(name);
+
+  div.style.backgroundColor = bg_color;
+  div.style.width = `${width}px`;
+  div.style.height = `${height}px`;
+
+  return document.body.appendChild(div);   
+}
+
+
+//! ================================================================================
+
+
 //* createRandomNumber - Generates a random number between 0 and 1000
 
 function createRandomNumber() {
@@ -40,21 +56,10 @@ const calculateArea = (side_a, side_b) => `${side_a * side_b}`;
 //* createDivs - Creates a given number of divs on a page
 
 function createDivs(number_divs) {
-  function randomColor() {
-    const colors = ["red", "blue", "green", "purple", "gray"]
-    const random = Math.floor(Math.random() * colors.length);
-
-    return colors[random];
-  }
+  let rand_color = getRandomColor();
 
   for (let number_i = 1; number_i <= number_divs; number_i++) {
-    const div = document.createElement("div");
-
-    div.style.backgroundColor = randomColor();
-    div.style.width = "50px";
-    div.style.height = "50px";
-
-    document.body.appendChild(div);    
+    createDiv("div", rand_color, 50, 50); 
   }
   return "";
 }
@@ -68,93 +73,83 @@ const calculateTax = (amount, tax) => `Tax = ${(amount * tax) / 100}, from ${amo
 //* getRandomItem - Picks a random item from a given array
 
 function getRandomItem() {
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-  const random = Math.floor(Math.random() * numbers.length);
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
-  return `Random number from an array: ${numbers[random]}`;
+  return `Random number from an array: ${numbers[(Math.floor(Math.random() * numbers.length))]}`;
 }
 
 
 //* createEmailAddress - Generates a unique email address
 
 function createEmailAddress() {
-  const getRandomItem = () => Math.floor(Math.random() * 10) + 7;
+  let empty_string = "";
 
   function getRandomSymbol() {
     const symbols = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
                      "a", "b", "c", "d", "e", "f", "g", "h", "i", "j",
                      "k", "l", "m", "n", "o", "p", "q", "r", "s", "t",
-                     "u", "v", "w", "x", "y", "z", "$", "%", "_", "-"]
-    const random = Math.floor(Math.random() * symbols.length);
+                     "u", "v", "w", "x", "y", "z", "$", "&", "_", "-"];
   
-    return symbols[random];
+    return symbols[(Math.floor(Math.random() * symbols.length))];
   }
 
   function getRandomMail() {
-    const mails = ["gmail", "yopmail", "o2", "icloud"]
-    const random = Math.floor(Math.random() * mails.length);
+    const mails = ["gmail", "yopmail", "o2", "icloud"];
   
-    return mails[random];
+    return mails[(Math.floor(Math.random() * mails.length))];
   }
 
-  let empty_string = "";
-  for (let i = 1; i <= getRandomItem(); i++) {
+  for (let i = 1; i <= Math.floor(Math.random() * 10) + 7; i++) {
     empty_string += getRandomSymbol();
   }
 
   return empty_string += `@${getRandomMail()}.com`;
 }
+
+
 //* checkPalindrome - Checks if a given string is a palindrome
 
 function checkPalindrome(palindrome) {
-  let palindrome_rev = palindrome.split("").reverse().join("")
+  let palindrome_rev = palindrome.split("").reverse().join("");
 
   if (palindrome == palindrome_rev) {
-    return `${palindrome} (${palindrome_rev}) is a palindrome`
+    return `${palindrome} (${palindrome_rev}) is a palindrome`;
   } else {
-    return `${palindrome} (${palindrome_rev}) is not a palindrome`
+    return `${palindrome} (${palindrome_rev}) is not a palindrome`;
   }
 }
+
 
 //* getRandomColor - Generates a random color in hex code
 
 function getRandomColor() {
   function getRandomIndex() {
-    const index = ["1", "2", "3", "4", "5", "6", "7", "8", "9",
-                   "0", "A", "B", "C", "D", "E", "F"]
-    const random = Math.floor(Math.random() * index.length);
+    const index = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "A", "B", "C", "D", "E", "F"];
     
-    return index[random];
+    return index[(Math.floor(Math.random() * index.length))];
   }
     let empty_string = "";
   
     for (let i = 1; i <= 6; i++) {
       empty_string += getRandomIndex();
     }
-    return `#${empty_string}`
+
+    return `#${empty_string}`;
   }
 
 
 //! ==========================================
 
+
 document.addEventListener("DOMContentLoaded", function() {
-  document.write(createRandomNumber());
-  document.write("<br>");
-  document.write(reverseString("olleh"));
-  document.write("<br>");
-  document.write(checkPrime(10));
-  document.write("<br>");
-  document.write(`P = ${calculateArea(4, 6)}<sup>2</sup>`);
-  document.write("<br>");
-  document.write(calculateTax(1000, 5));
-  document.write("<br>");
-  document.write(getRandomItem());
-  document.write("<br>");
-  document.write(createEmailAddress());
-  document.write("<br>");
-  document.write(checkPalindrome("racecar"));
-  document.write("<br>");
-  document.write(getRandomColor());
-  document.write("<br>");
-  document.write(createDivs(7));
+  document.write(`${createRandomNumber()}<br>`);
+  document.write(`${reverseString("olleh")}<br>`);
+  document.write(`${checkPrime(10)}<br>`);
+  document.write(`${calculateArea(4, 6)}<sup>2</sup><br>`);
+  document.write(`${calculateTax(1000, 5)}<br>`);
+  document.write(`${getRandomItem()}<br>`);
+  document.write(`${createEmailAddress()}<br>`);
+  document.write(`${checkPalindrome("racecar")}<br>`);
+  document.write(`${getRandomColor()}<br>`);
+  document.write(`${createDivs(7)}`);
 });
