@@ -26,6 +26,19 @@
 9. checkPalindrome - Checks if a given string is a palindrome
 10. getRandomColor - Generates a random color in hex code
 
+### :newspaper: Object ideas (practice)
+
+1. A person object, with properties such as name, age, and address.
+2. A car object, with properties such as make, model, and year.
+3. A book object, with properties such as title, author, and number of pages.
+4. A movie object, with properties such as title, director, and release date.
+5. A product object, with properties such as name, price, and quantity in stock.
+6. A weather object, with properties such as temperature, humidity, and wind speed.
+7. A calculator object, with methods for performing basic math operations such as addition, subtraction, multiplication, and division.
+8. A student object, with properties such as name, grade level, and GPA.
+9. A recipe object, with properties such as name, ingredients, and instructions.
+10. A shopping list object, with properties such as items needed and their quantities, and methods for adding and removing items from the list.
+
 ### :newspaper: HTML ideas (practice)
 
 1. Create a quiz that tests the user's knowledge of HTML tags and attributes
