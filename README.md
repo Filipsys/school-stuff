@@ -1,7 +1,7 @@
 # School stuff
 
 ### :newspaper: Loop ideas (practice)
-:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/PETLE/petle.js"><b>Click here</a>
+:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/forLoops.js"><b>Click here</a>
 to jump to the file <i>(spoilers!)</i></b>
 
 1. Print the numbers 1 to 10 using a for loop
