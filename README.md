@@ -45,6 +45,19 @@ to jump to the file <i>(spoilers!)</i></b>
 9. A recipe object, with properties such as name, ingredients, and instructions.
 10. A shopping list object, with properties such as items needed and their quantities, and methods for adding and removing items from the list.
 
+### :newspaper: Array ideas (practice)
+
+1. Create an array of your favorite foods and loop through the array to print each item to the console.
+2. Create an array of numbers and use the sort method to sort the numbers in ascending or descending order.
+3. Create an array of objects, each representing a person with properties such as name and age, and use the filter method to create a new array of only people over a certain age.
+4. Use the map method to create a new array of objects that includes only a certain property from the original array of objects.
+5. Use the reduce method to sum all the numbers in an array of numbers.
+6. Use the some method to check if any element in an array meets a certain condition.
+7. Use the every method to check if all elements in an array meet a certain condition.
+8. Use the indexOf method to find the index of a certain element in an array.
+9. Use the includes method to check if an array includes a certain element.
+10. Use the push and pop methods to add and remove elements from the end of an array.
+
 ### :newspaper: HTML ideas (practice)
 
 1. Create a quiz that tests the user's knowledge of HTML tags and attributes
