@@ -30,8 +30,9 @@ to jump to the file <i>(spoilers!)</i></b>
 9. checkPalindrome - Checks if a given string is a palindrome
 10. getRandomColor - Generates a random color in hex code
 
-
 ### :newspaper: Object ideas (practice)
+:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/Obiekty.js"><b>Click here</a>
+to jump to the file <i>(spoilers!)</i></b>
 
 1. A person object, with properties such as name, age, and address.
 2. A car object, with properties such as make, model, and year.
