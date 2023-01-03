@@ -1,7 +1,7 @@
 # School stuff
 
 ### :newspaper: Loop ideas (practice)
-:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/Practice/forLoops.js"><b>Click here</a>
+:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/Filip/Practice/forLoops.js"><b>Click here</a>
 to jump to the file <i>(spoilers!)</i></b>
 
 1. Print the numbers 1 to 10 using a for loop
@@ -16,7 +16,7 @@ to jump to the file <i>(spoilers!)</i></b>
 10. Create a loop to print the powers of 2 from 1 to 10
 
 ### :newspaper: Function ideas (practice)
-:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/Practice/functions.js"><b>Click here</a>
+:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/Filip/Practice/functions.js"><b>Click here</a>
 to jump to the file <i>(spoilers!)</i></b>
 
 1. createRandomNumber - Generates a random number between 0 and 1000
@@ -31,7 +31,7 @@ to jump to the file <i>(spoilers!)</i></b>
 10. getRandomColor - Generates a random color in hex code
 
 ### :newspaper: Object ideas (practice)
-:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/Practice/obiekty.js"><b>Click here</a>
+:star: <a href="https://github.com/Filipsys/school-stuff/blob/main/Filip/Practice/obiekty.js"><b>Click here</a>
 to jump to the file <i>(spoilers!)</i></b>
 
 1. A person object, with properties such as name, age, and address.
