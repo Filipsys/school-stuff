@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select class="123123" id="123">
+    <option value="">Wybierz łańcuch góski</option>
+    <option value="tatry">Tatry</option>
+    <option value="karkonosze">Karkonosze</option>
+    <option value="beskidy">Beskidy</option>
+  </select>
+  
+  <div class="empty"></div>
+
+  <script>
+    dict = {
+      "tatry": "tyle i tyle.",
+      "karkonosze": "tyle i tyle..",
+      "beskidy": "tyle i tyle..."
+    }
+
+    document.addEventListener("input", function() {
+      document.querySelector(".empty").textContent = dict[document.getElementById("123").value]
+    })
+  </script>
+</body>
+</html>

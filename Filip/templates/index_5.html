@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="cube" style="height: 300px; width: 300px; border: 1px black solid;"></div>
+  <button class="change_to_red" onclick="changeToRed()">czerwone tło</button>
+  <button class="change_to_green" onclick="changeToGreen()">zielone tło</button>
+
+  <script>
+    function changeToRed() {
+      document.querySelector(".cube").style.backgroundColor = "red"
+    }
+
+    function changeToGreen() {
+      document.querySelector(".cube").style.backgroundColor = "green"
+    }
+  </script>
+</body>
+</html>
